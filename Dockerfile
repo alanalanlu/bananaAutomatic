@@ -1,4 +1,4 @@
-FROM nvidia/cuda:11.7.1-runtime-ubuntu22.04
+FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
   
 # To use a different model, change the model URL below:
 ARG MODEL_URL='https://ckptfiles.s3.us-east-2.amazonaws.com/hassakuHentaiModel_hassakuv1.safetensors'
