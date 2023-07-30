@@ -7,9 +7,9 @@ ARG MODEL_URL='https://ckptfiles.s3.us-east-2.amazonaws.com/hassakuHentaiModel_h
 # access token (https://huggingface.co/settings/tokens) below:
 ARG HF_TOKEN=''
 
-RUN apt update && apt-get -y install git wget \
-    python3.10 python3.10-venv python3-pip \
-    build-essential libgl-dev libglib2.0-0 vim
+RUN apt update && apt-get -y install git wget\
+    build-essential cmake libgl-dev libglib2.0-0 vim
+    
 RUN ln -s /usr/bin/python3.10 /usr/bin/python
 
 RUN useradd -ms /bin/bash banana
