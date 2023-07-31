@@ -31,6 +31,7 @@ ADD prepare.py .
 RUN python prepare.py --skip-torch-cuda-test --xformers --reinstall-torch --reinstall-xformers
 
 RUN pip install banana-cli
+RUN pip install banana-dev
 RUN pip install torchmetrics==0.11.4
 RUN pip install MarkupSafe==2.0.1
 ADD download.py download.py
