@@ -30,6 +30,7 @@ RUN python download_checkpoint.py
 ADD prepare.py .
 RUN python prepare.py --skip-torch-cuda-test --xformers --reinstall-torch --reinstall-xformers
 
+RUN pip install xformers
 RUN pip install potassium
 RUN pip install banana-dev
 RUN pip install torchmetrics==0.11.4
