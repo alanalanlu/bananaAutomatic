@@ -1,7 +1,7 @@
 FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
   
 # To use a different model, change the model URL below:
-ARG MODEL_URL='https://ckptfiles.s3.us-east-2.amazonaws.com/hassakuHentaiModel_hassakuv1.safetensors'
+ARG MODEL_URL='https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt'
 
 # If you are using a private Huggingface model (sign in required to download) insert your Huggingface
 # access token (https://huggingface.co/settings/tokens) below:
